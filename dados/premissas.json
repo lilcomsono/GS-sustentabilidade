@@ -1,0 +1,44 @@
+{
+  "projeto": "Neighborhood Action Dashboard — Energia sustentável na escola",
+  "versao": "2026.2-corrigida",
+  "integrantes": [
+    {"nome": "Letticia Aparecida Martins", "rm": "575441"},
+    {"nome": "Kalil Bachur", "rm": "576335"},
+    {"nome": "Gustavo Valentim de Souza", "rm": "575916"}
+  ],
+  "escopo": "Cenário hipotético de uma escola pública em São Paulo. Considera somente iluminação e ar-condicionado; não é o consumo completo de uma escola real.",
+  "dias_letivos_mes": 22,
+  "horas_iluminacao_dia": 8,
+  "horas_ar_dia": 5,
+  "quantidade_luminarias": 80,
+  "potencia_fluorescente_w": 80,
+  "potencia_led_w": 36,
+  "quantidade_ar": 10,
+  "potencia_ar_w": 1000,
+  "tarifa_rs_kwh": 0.95,
+  "potencia_solar_kwp": 5,
+  "horas_sol_pleno_dia": 4.3,
+  "desempenho_solar": 0.8,
+  "dias_solar_considerados_mes": 22,
+  "custo_luminaria_instalada_rs": 450,
+  "custo_solar_rs_kwp": 4200,
+  "reserva_manutencao_led_percentual_ano": 0.01,
+  "reserva_manutencao_solar_percentual_ano": 0.01,
+  "fator_co2_kg_kwh": 0.0385,
+  "meses_equivalentes_ano": 12,
+  "natureza_premissas": {
+    "equipamentos_horarios": "Hipóteses de dimensionamento didático; sem levantamento de campo.",
+    "led": "Equivalência luminosa é hipótese de projeto: validar lúmens, distribuição e iluminância antes da implantação.",
+    "tarifa": "Tarifa uniforme hipotética para comparação, não tarifa oficial de uma escola ou média certificada da ANEEL.",
+    "solar": "4,3 h/dia de sol pleno e desempenho de 80% são hipóteses. A conversão de irradiação para HSP usa a irradiância de referência de 1 kW/m². Sem consulta de coordenadas da escola.",
+    "dias_solar": "Considera apenas a geração em 22 dias letivos. Exclui geração e eventuais créditos dos demais dias: não representa toda a geração de um mês calendário.",
+    "custos": "Custos de implantação são hipóteses, não cotações de mercado. Reservas de manutenção de 1% ao ano são hipóteses didáticas, não valores observados.",
+    "co2": "Fator histórico de 2023: 38,5 kg CO₂/MWh = 0,0385 kg CO₂/kWh. Referência governamental reproduz dados do MCTI. Não é fator atual de 2026 nem inclui avaliação de ciclo de vida.",
+    "anualizacao": "12 meses equivalentes; não incorpora férias, sazonalidade, alteração de tarifa ou degradação."
+  },
+  "referencias": [
+    {"titulo": "MME / Agência Gov. Geração de energia elétrica tem a menor emissão de CO₂ dos últimos onze anos. 14/02/2024.", "url": "https://agenciagov.ebc.com.br/noticias/202402/geracao-de-energia-eletrica-tem-a-menor-emissao-de-co2-dos-ultimos-onze-anos-1", "uso": "Dado histórico: 38,5 kg CO₂/MWh no SIN em 2023."},
+    {"titulo": "CRESESB / CEPEL. Potencial Solar — SunData v3.0.", "url": "https://cresesb.cepel.br/sundata/index.php", "uso": "Metodologia e unidades das médias diárias mensais de irradiação; não comprova a hipótese numérica 4,3 para uma escola específica."},
+    {"titulo": "ANEEL. Tarifas.", "url": "https://www.gov.br/aneel/pt-br/assuntos/tarifas", "uso": "Referência para consulta futura da tarifa específica. O valor 0,95 adotado é hipótese didática."}
+  ]
+}

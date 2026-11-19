@@ -1,0 +1,66 @@
+[
+  {
+    "numero": 1,
+    "titulo": "Capa",
+    "tempo_inicio": "0:00",
+    "tempo_fim": "0:12",
+    "narracao": "Olá, sou Kalil. Nosso grupo propõe uma combinação de LED e energia solar para uma escola pública em São Paulo.",
+    "acao_tela": "Capa com os três nomes e RMs legíveis. Não é necessário ler os RMs em voz alta."
+  },
+  {
+    "numero": 2,
+    "titulo": "Problema",
+    "tempo_inicio": "0:12",
+    "tempo_fim": "0:30",
+    "narracao": "O cenário é hipotético, sem visita técnica nem medições. Consideramos dois usos: 80 luminárias de 80 W, ligadas 176 horas por mês, e 10 aparelhos de ar-condicionado de 1000 W, por 110 horas. Juntos, consomem 2.226,4 kWh por mês.",
+    "acao_tela": "Tabela com os dois usos e o consumo de referência."
+  },
+  {
+    "numero": 3,
+    "titulo": "Método e consumo de referência",
+    "tempo_inicio": "0:30",
+    "tempo_fim": "0:50",
+    "narracao": "Calculamos energia como potência vezes quantidade e tempo. O Python lê as premissas e gera um arquivo de resultados e o dashboard offline. São dados simulados, não de sensores reais. Aqui, mostramos a execução do programa.",
+    "acao_tela": "Fluxo do método; recorte de 3 a 5 segundos do terminal executando o script Python."
+  },
+  {
+    "numero": 4,
+    "titulo": "Alternativas e custos",
+    "tempo_inicio": "0:50",
+    "tempo_fim": "1:12",
+    "narracao": "Avaliamos duas alternativas. Primeiro, LED de 36 W, uma luz equivalente que ainda precisa ser validada em lúmens e iluminância antes da instalação, por 36 mil reais. Segundo, solar de 5 kWp, com 4,3 horas de sol pleno por dia e desempenho de 80%, por 21 mil reais. Telhado e orçamento não foram levantados.",
+    "acao_tela": "Dois cartões: LED e solar, com premissas e CAPEX."
+  },
+  {
+    "numero": 5,
+    "titulo": "Diagrama",
+    "tempo_inicio": "1:12",
+    "tempo_fim": "1:28",
+    "narracao": "No diagrama, o solar passa pelo inversor e, com a rede, chega ao quadro, que alimenta LED e ar-condicionado. Hoje, premissas de simulação alimentam o Python; no futuro, medidores poderiam fazer isso, num monitoramento ainda conceitual.",
+    "acao_tela": "Diagrama: solar/inversor + rede -> quadro -> LED + AC; premissas (simulação) ou medidores (futuro) -> Python -> indicadores/dashboard."
+  },
+  {
+    "numero": 6,
+    "titulo": "Resultados: economia bruta e líquida",
+    "tempo_inicio": "1:28",
+    "tempo_fim": "2:05",
+    "narracao": "Com LED, o consumo dos dois usos cai 27,8%. A solar gera 378,4 kWh nos 22 dias considerados. A compra da rede cai 44,8%, e a participação solar é de 23,5%. Com tarifa hipotética de 95 centavos por kWh, a economia bruta é de 948 reais mensais. A reserva de manutenção de 47 reais e 50 centavos reduz esse valor para aproximadamente 901 reais. O investimento combinado é de 57 mil reais, com retorno simples líquido em 63,3 meses.",
+    "acao_tela": "Gráfico de consumo (referência, pós-LED, rede final) e tabela bruta/líquida/retorno."
+  },
+  {
+    "numero": 7,
+    "titulo": "Demonstração do dashboard",
+    "tempo_inicio": "2:05",
+    "tempo_fim": "2:28",
+    "narracao": "Agora, o dashboard real, aberto offline. Mostramos os seis indicadores, os gráficos e a comparação dos cenários. A redução é comparada à referência atual. Estes números foram gerados pelo Python, não por medições.",
+    "acao_tela": "Gravação de tela do dashboard.html: indicadores, comparação e retorno (cerca de 23 s)."
+  },
+  {
+    "numero": 8,
+    "titulo": "Benefícios e limitações",
+    "tempo_inicio": "2:28",
+    "tempo_fim": "2:52",
+    "narracao": "A estimativa é evitar 461 quilos de CO₂ por ano equivalente. Usamos o fator histórico do SIN de 2023, não um dado de 2026 nem uma análise de ciclo de vida. A economia pode apoiar a comunidade escolar. Antes de implantar, precisamos validar iluminação, telhado, uso e orçamento. Obrigado.",
+    "acao_tela": "Lista de benefícios e limitações; encerramento."
+  }
+]
